@@ -17,6 +17,6 @@ def build_and_compile_cnn_model():
         tf.keras.layers.Dense(10, activation='softmax')
     ])
 
-    model.compile(optimizer='Anton', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer='Adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
     return model

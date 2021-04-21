@@ -5,7 +5,6 @@ import model
 
 worker_index = 0
 tf_config = con.config(worker_index)
-
 strategy = tf.distribute.MultiWorkerMirroredStrategy()
 dataset = model.get_dataset()
 
