@@ -1,11 +1,11 @@
 import tensorflow as tf
 
 
-def get_dataset():
+def get_dataset(batch_size):
     mnist = tf.keras.datasets.mnist
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
     x_train, x_test = x_train / 255.0, x_test / 255.0
-    dataset = ((x_train, y_train), (x_test, y_test))
+    dataset = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).repeat().batch(batch_size)
     return dataset
 
 
