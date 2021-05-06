@@ -5,7 +5,12 @@ def get_dataset(batch_size):
     mnist = tf.keras.datasets.mnist
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
     x_train, x_test = x_train / 255.0, x_test / 255.0
-    dataset = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).repeat().batch(batch_size)
+    dataset = tf.data.Dataset.from_tensor_slices((x_train, y_train))
+    #dataset = dataset.shuffle(60000)
+    #dataset = dataset.repeat(3)
+    dataset = dataset.apply(tf.data.experimental.shuffle_and_repeat(buffer_size=60000, count=3))
+    dataset = dataset.batch(batch_size)
+    dataset = dataset.prefetch(buffer_size=1)
     return dataset
 
 
