@@ -3,8 +3,9 @@ import tfConfig as con
 import model
 
 
-#tf_config = con.config()
-strategy = tf.distribute.MultiWorkerMirroredStrategy()
+tf_config = con.config()
+com_option = tf.distribute.experimental.CommunicationOptions(implementation=tf.distribute.experimental.CommunicationImplementation.RING) 
+strategy = tf.distribute.MultiWorkerMirroredStrategy(communication_options=com_option)
 global_batch = 64 * 4
 dataset = model.get_dataset(global_batch)
 
