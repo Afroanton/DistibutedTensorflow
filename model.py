@@ -10,6 +10,11 @@ def get_dataset(batch_size):
     #dataset = dataset.repeat(3)
     dataset = dataset.apply(tf.data.experimental.shuffle_and_repeat(buffer_size=60000, count=3))
     dataset = dataset.batch(batch_size)
+    
+    options = tf.data.Options()
+    options.experimental_distribute.auto_shard_policy = tf.data.experimental.AutoShardPolicy.DATA
+    
+    dataset = dataset.with_options(options)
     dataset = dataset.prefetch(buffer_size=1)
     return dataset
 
