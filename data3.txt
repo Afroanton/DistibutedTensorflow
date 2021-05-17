@@ -1,0 +1,33 @@
+29s 318ms/step - loss: 1.3902 - accuracy: 0.5830
+21s 304ms/step - loss: 0.3954 - accuracy: 0.8866
+16s 228ms/step - loss: 0.3288 - accuracy: 0.9056
+17s 242ms/step - loss: 0.2618 - accuracy: 0.9255
+31s 439ms/step - loss: 0.2531 - accuracy: 0.9255
+
+
+29s 318ms/step - loss: 1.3902 - accuracy: 0.5830
+21s 304ms/step - loss: 0.3954 - accuracy: 0.8866
+16s 228ms/step - loss: 0.3288 - accuracy: 0.9056
+17s 242ms/step - loss: 0.2618 - accuracy: 0.9255
+31s 439ms/step - loss: 0.2531 - accuracy: 0.9255
+
+
+52s 635ms/step - loss: 1.3437 - accuracy: 0.6189
+30s 421ms/step - loss: 0.4104 - accuracy: 0.8840
+30s 431ms/step - loss: 0.3292 - accuracy: 0.9054
+27s 384ms/step - loss: 0.2703 - accuracy: 0.9207
+38s 540ms/step - loss: 0.2334 - accuracy: 0.9341
+
+
+65s 839ms/step - loss: 1.3040 - accuracy: 0.6165
+33s 463ms/step - loss: 0.3920 - accuracy: 0.8869
+30s 423ms/step - loss: 0.3154 - accuracy: 0.9106
+22s 322ms/step - loss: 0.2776 - accuracy: 0.9194
+32s 455ms/step - loss: 0.2418 - accuracy: 0.9290
+
+
+45s 542ms/step - loss: 1.3749 - accuracy: 0.5966
+28s 402ms/step - loss: 0.3985 - accuracy: 0.8833
+23s 336ms/step - loss: 0.3187 - accuracy: 0.9087
+37s 534ms/step - loss: 0.2833 - accuracy: 0.9198
+33s 467ms/step - loss: 0.2420 - accuracy: 0.9319
